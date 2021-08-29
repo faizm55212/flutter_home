@@ -1,0 +1,24 @@
+name: flutter_home
+publish_to: 'none'
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  flutter_svg: ^0.22.0
+  draggable_home: ^1.0.2
+  get: ^4.3.8
+  delayed_display: ^2.0.0
+  spring: ^2.0.2
+  animated_rotation: ^2.0.0
+  animated_widgets: ^1.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+flutter:
+  assets:
+    - assets/
+  uses-material-design: true
