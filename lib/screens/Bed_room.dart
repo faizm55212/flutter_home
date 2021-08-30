@@ -221,7 +221,7 @@ class BedRoom extends StatelessWidget {
                           topRight: Radius.circular(30.0)),
                       child: Container(
                         padding: EdgeInsets.all(20.0),
-                        height: 1230 - kHieght,
+                        height: kHieght - 330,
                         width: kwidhth,
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -257,6 +257,7 @@ class BedRoom extends StatelessWidget {
                                                 ? anime.tickerValue.value
                                                 : currentSliderValue.value,
                                             onChanged: (double value) {
+                                              print(kHieght);
                                               currentSliderValue.value = value;
                                               anime.tickerValue.value = value;
                                             }),
@@ -488,7 +489,7 @@ class BedRoom extends StatelessWidget {
                 ],
               ),
               Positioned(
-                bottom: 1253 - kHieght,
+                bottom: 473,
                 right: 0.0,
                 child: PowerButton(),
               ),
